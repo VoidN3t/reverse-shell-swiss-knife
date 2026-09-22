@@ -41,6 +41,8 @@ Install the dependencies:
 python3 -m pip install -r requirements.txt
 ```
 
+A prebuilt binary is also published in the repository's GitHub Releases. This binary is intended to let you run the tool without installing Python and the project dependencies locally, while still using the same interactive menu and payload generation features described in this project. Download the release for your platform, verify it is the official artifact from this repository, and use it only in authorized lab or test environments.
+
 ## Usage
 
 Start the interactive menu:
